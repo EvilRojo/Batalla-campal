@@ -19,15 +19,16 @@ html,body {
   }
 
   .div100{
-    width: 100%;
-    padding: 1rem;
+    width: 80%;
+    align-content: center;
+    padding: 2rem;
     margin: 1em;
     background-color:#76673A;
     border: thick solid #48390D;
   }
 
   .div50{
-    width: 50%;
+    width: 40%;
     padding: 1rem;
     margin: 1em;
   }
