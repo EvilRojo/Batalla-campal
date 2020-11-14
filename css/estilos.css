@@ -4,6 +4,22 @@ body {
     
   }
   
+  .tabla{
+
+  }
+
+  .div100{
+    width: 100%;
+  }
+
+  .div50{
+    width: 50%;
+  }
+
+  .titulo{
+    font-size: 20px;
+    font-weight: bolder;
+  }
   form {
     display: inline-block;
     text-align: start;
