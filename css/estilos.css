@@ -47,7 +47,8 @@ html,body {
   }
 
   .div50{
-    width: 39%;
+    width: 50%;
+    height: 60;
     margin: 2rem 2rem 2rem 2rem;
     display: block;
     box-sizing: border-box;
