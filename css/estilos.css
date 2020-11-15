@@ -48,6 +48,10 @@ html,body {
 
   .div50{
     width: 39%;
+    margin: 2rem 2rem 2rem 2rem;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 15px 15px 19px 19px;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left:1.5rem;
