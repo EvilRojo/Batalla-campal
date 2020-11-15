@@ -33,7 +33,7 @@ html,body {
   }
 
   .divtitle{
-    width: 50%;
+    width: 60%;
     margin: 2rem 2rem 2rem 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -47,13 +47,13 @@ html,body {
   }
 
   .div50{
-    width: 40%;
+    width: 39%;
     padding: 1rem;
     margin: 1em;
   }
 
   .titulo{
-    font-size: 90px;
+    font-size: 80px;
     font-weight: bolder;
   }
   form {
