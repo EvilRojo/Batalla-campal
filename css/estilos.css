@@ -15,8 +15,13 @@ html,body {
     left: 0;
 }
   .suelo{
-    width: 2%;
-    height: 2%;
+    width: 10px;
+    height: 10px;
+  }
+
+  table{
+    border-style: solid;
+    border: thick ridge #48390D;
   }
 
   .div100{
