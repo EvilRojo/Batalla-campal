@@ -15,13 +15,14 @@ html,body {
     left: 0;
 }
   .suelo{
-    width: 35px;
-    height: 35px;
+    width: 5%px;
+    height: 5%px;
   }
 
   table{
     border-style: solid;
     border: thick solid #48390D;
+
   }
 
   button{
@@ -44,13 +45,12 @@ html,body {
   }
 
   .divtitle{
-    width: 50%;
+    width: 45%;
     margin: 2rem 2rem 2rem 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left:1.5rem;
     padding-right:1.5rem;
-    display: block;
     box-sizing: border-box;
     border-radius: 15px 15px 19px 19px;
     background-color:#C8B788;
