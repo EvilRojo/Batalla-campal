@@ -21,7 +21,7 @@ html,body {
 
   table{
     border-style: solid;
-    border: thick ridge #48390D;
+    border: thick solid #48390D;
   }
 
   button{
