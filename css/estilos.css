@@ -14,8 +14,9 @@ html,body {
     top: 0;
     left: 0;
 }
-  .tabla{
-
+  .suelo{
+    width: 2%;
+    height: 2%;
   }
 
   .div100{
