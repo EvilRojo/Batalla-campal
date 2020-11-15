@@ -24,6 +24,11 @@ html,body {
     border: thick ridge #48390D;
   }
 
+  button{
+    width: 30px;
+    height: 30px;
+  }
+
   .div100{
     width: 80%;
     margin: 2rem 2rem 2rem 2rem;
