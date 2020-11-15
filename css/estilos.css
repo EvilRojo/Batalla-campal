@@ -15,13 +15,14 @@ html,body {
     left: 0;
 }
   .suelo{
-    width: 5%px;
-    height: 5%px;
+    width: 5%;
+    height: 5%;
   }
 
   table{
     border-style: solid;
     border: thick solid #48390D;
+    
 
   }
 
