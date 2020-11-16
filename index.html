@@ -21,7 +21,7 @@
         <div class="div100">
               <div class="div50">
                 <center>
-                <form id=batalla>
+                <form id=campo>
                   <table>
                     <tr>
                       <td>
@@ -88,9 +88,8 @@
                         <input class="suelo" value="2,10"type="image" name="botondeenvio" src="img/tierra.jpg">
                       </td>
                     </tr>
-
-                    
                   </table>
+                  <p><output name="salida"></output></p>
                 </form>
                 </center>
               </div>
@@ -140,21 +139,22 @@
         </div>
       </center>
       <script type="module">
-        import { CtrlSaludo } from "./js/CtrlSaludo.js";
-        const ctrlSaludo = new CtrlSaludo();
-        formSaludo.addEventListener("submit", evt => {
+        import { Batalla } from "./js/Batalla.js";
+        const Batalla = new Batalla();
+        campo.addEventListener("submit", evt => {
           try {
             evt.preventDefault();
-            const datos = new FormData(formSaludo);
-            const nombre = datos.get("nombre");
-            const saludo = ctrlSaludo.calculaSaludo(nombre);
-            formSaludo.salida.value = saludo;
+            const datos = new FormData(campo);
+            const posicion= datos.get("botondeenvio");
+            const revisar = Batalla.verPos(posicion);
+            campo.salida.value = saludo;
           } catch (error) {
             console.log(error);
-            formSaludo.salida.value = error.message;
+            campo.salida.value = error.message;
           }
         });
       </script>
+
     <!--<form id="formSaludo">
       <h1>Saludo</h1>
       <p>
