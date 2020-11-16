@@ -24,18 +24,20 @@
                   <table>
                     <tr>
                       <td>
-                        <form id=campo>
+                        <form id=campo1>
                           <input type="hidden"value="1,1" name="botondeenvio">
                           <input class="suelo" type="image" name="botondeenvio" src="img/tierra.jpg">
                           <p><output name="salida"></output></p>
-                        
+                        </form>
                         
                       </td>
                       <td>
-                        <input type="hidden"value="1,2" name="botondeenvio">
-                        <input class="suelo" type="image" name="botondeenvio" src="img/tierra.jpg">
-                        <p><output name="salida"></output></p>
+                        <form id=campo2>
+                          <input type="hidden"value="1,2" name="botondeenvio">
+                          <input class="suelo" type="image" name="botondeenvio" src="img/tierra.jpg">
+                          <p><output name="salida"></output></p>
                         </form>
+                        
                       </td>
                       <td>
                         <input class="suelo" value="1,3" type="image" name="botondeenvio" src="img/tierra.jpg">
@@ -148,16 +150,28 @@
       <script type="module">
         import { Batalla } from "./js/Batalla.js";
         const bomba = new Batalla();
-        campo.addEventListener("submit", evt => {
+        campo1.addEventListener("submit", evt => {
           try {
             evt.preventDefault();
-            const datos = new FormData(campo);
+            const datos = new FormData(campo1);
             const posicion= datos.get("botondeenvio");
             const revisar = bomba.verPos(posicion);
-            campo.salida.value = revisar;
+            campo1.salida.value = revisar;
           } catch (error) {
             console.log(error);
-            campo.salida.value = "no sale we";
+            campo1.salida.value = "no sale we";
+          }
+        });
+        campo2.addEventListener("submit", evt => {
+          try {
+            evt.preventDefault();
+            const datos = new FormData(campo2);
+            const posicion= datos.get("botondeenvio");
+            const revisar = bomba.verPos(posicion);
+            campo2.salida.value = revisar;
+          } catch (error) {
+            console.log(error);
+            campo2.salida.value = "no sale we";
           }
         });
       </script>
