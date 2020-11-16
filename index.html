@@ -21,11 +21,15 @@
         <div class="div100">
               <div class="div50">
                 <center>
-                <form id=campo>
+                
                   <table>
                     <tr>
                       <td>
-                        <button value="1,1" type="submit" name="botondeenvio"><img class="suelo" src="img/tierra.jpg"></button>
+                        <form id=campo>
+                          <input type="hidden"value="1,1" name="botondeenvio">
+                          <button><img class="suelo" src="img/tierra.jpg"></button>
+                        </form>
+                        
                       </td>
                       <td>
                         <input class="suelo" value="1,2" type="image" name="botondeenvio" src="img/tierra.jpg">
@@ -90,7 +94,7 @@
                     </tr>
                   </table>
                   <p><output name="salida"></output></p>
-                </form>
+                
                 </center>
               </div>
             </td>
