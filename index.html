@@ -89,6 +89,7 @@
                       </td>
                     </tr>
                   </table>
+                  <p id="demo"></p>
                   <p><output name="salida"></output></p>
                 </form>
                 </center>
@@ -141,16 +142,18 @@
       <script type="module">
         import { Batalla } from "./js/Batalla.js";
         const Batalla = new Batalla();
-        campo.addEventListener("submit", evt => {
+        campo.addEventListener("botondeenvio", evt => {
           try {
             evt.preventDefault();
             const datos = new FormData(campo);
             const posicion= datos.get("botondeenvio");
             const revisar = Batalla.verPos(posicion);
             campo.salida.value = saludo;
+            document.getElementById("demo").innerHTML = "Funciona";
           } catch (error) {
             console.log(error);
             campo.salida.value = error.message;
+            document.getElementById("demo").innerHTML = "No Funciona";
           }
         });
       </script>
