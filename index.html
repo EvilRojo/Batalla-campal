@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batalla campal</title>
     <link href="css/estilos.css" rel="stylesheet">
+    <script src="js/inicio.js"></script>
     <script type="module" src="cmp/mi-footer.js"></script>
     <link rel="icon" type="image/png" href="img/favicon.png" />
   </head>
@@ -26,14 +27,14 @@
                       <td>
                         <form id=campo1>
                           <input type="hidden"value="1,1" name="botondeenvio">
-                          <input class="suelo" type="image" name="salida" src="img/tierra.jpg">
+                          <input class="suelo" type="image" id="salida1" src="img/tierra.jpg">
                         </form>
                         
                       </td>
                       <td>
                         <form id=campo2>
                           <input type="hidden"value="1,2" name="botondeenvio">
-                          <input class="suelo" type="image" name="salida" src="img/tierra.jpg">
+                          <input class="suelo" type="image" id="salida2" src="img/tierra.jpg">
                         </form>
                         
                       </td>
@@ -157,7 +158,6 @@
             const datos = new FormData(campo1);
             const posicion= datos.get("botondeenvio");
             const revisar = bomba.verPos(posicion);
-            campo1.salida.src = revisar;
           } catch (error) {
             console.log(error);
             campo1.salida.value = "no sale we";
@@ -169,7 +169,6 @@
             const datos = new FormData(campo2);
             const posicion= datos.get("botondeenvio");
             const revisar = bomba.verPos(posicion);
-            campo2.salida.value = revisar;
           } catch (error) {
             console.log(error);
             campo2.salida.value = "no sale we";
