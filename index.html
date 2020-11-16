@@ -25,7 +25,7 @@
                   <table>
                     <tr>
                       <td>
-                        <input class="suelo" value="1,1" type="image" name="botondeenvio" src="img/tierra.jpg">
+                        <input class="suelo" value="1,1" type="image" name="test" src="img/tierra.jpg">
                       </td>
                       <td>
                         <input class="suelo" value="1,2" type="image" name="botondeenvio" src="img/tierra.jpg">
@@ -89,7 +89,6 @@
                       </td>
                     </tr>
                   </table>
-                  <p id="demo"></p>
                   <p><output name="salida"></output></p>
                 </form>
                 </center>
@@ -142,18 +141,16 @@
       <script type="module">
         import { Batalla } from "./js/Batalla.js";
         const bomba = new Batalla();
-        campo.addEventListener("botondeenvio", evt => {
+        campo.addEventListener("click", evt => {
           try {
             evt.preventDefault();
             const datos = new FormData(campo);
-            const posicion= datos.get("botondeenvio");
+            const posicion= datos.get("test");
             const revisar = bomba.verPos(posicion);
             campo.salida.value = revisar;
-            document.getElementById("demo").innerHTML = "Funciona";
           } catch (error) {
             console.log(error);
-            campo.salida.value = error.message;
-            document.getElementById("demo").innerHTML = "No Funciona";
+            campo.salida.value = "no sale we";
           }
         });
       </script>
