@@ -146,7 +146,7 @@
       <script type="module">
         import { Batalla } from "./js/Batalla.js";
         const bomba = new Batalla();
-        campo.addEventListener("submit", evt => {
+        campo.addEventListener("botondeenvio", evt => {
           try {
             evt.preventDefault();
             const datos = new FormData(campo);
