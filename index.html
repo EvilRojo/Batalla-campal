@@ -26,21 +26,22 @@
                       <td>
                         <form id=campo1>
                           <input type="hidden"value="1,1" name="botondeenvio">
-                          <input class="suelo" type="image" name="botondeenvio" src="img/tierra.jpg">
-                          <p><output name="salida"></output></p>
+                          <input class="suelo" type="image" name="salida" src="img/tierra.jpg">
                         </form>
                         
                       </td>
                       <td>
                         <form id=campo2>
                           <input type="hidden"value="1,2" name="botondeenvio">
-                          <input class="suelo" type="image" name="botondeenvio" src="img/tierra.jpg">
-                          <p><output name="salida"></output></p>
+                          <input class="suelo" type="image" name="salida" src="img/tierra.jpg">
                         </form>
                         
                       </td>
                       <td>
-                        <input class="suelo" value="1,3" type="image" name="botondeenvio" src="img/tierra.jpg">
+                        <form id=campo2>
+                          <input type="hidden"value="1,3" name="botondeenvio">
+                          <input class="suelo" type="image" name="botondeenvio" src="img/tierra.jpg">
+                        </form>
                       </td>
                       <td>
                         <input class="suelo" value="1,4" type="image" name="botondeenvio" src="img/tierra.jpg">
@@ -156,7 +157,7 @@
             const datos = new FormData(campo1);
             const posicion= datos.get("botondeenvio");
             const revisar = bomba.verPos(posicion);
-            campo1.salida.value = revisar;
+            campo1.salida.src = revisar;
           } catch (error) {
             console.log(error);
             campo1.salida.value = "no sale we";

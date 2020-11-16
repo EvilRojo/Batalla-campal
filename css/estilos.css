@@ -27,6 +27,11 @@ html,body {
 
   }
 
+  h2{
+    color: aliceblue;
+    
+  }
+
   button{
     width: 30px;
     height: 30px;
