@@ -148,7 +148,7 @@
             const datos = new FormData(campo);
             const posicion= datos.get("botondeenvio");
             const revisar = bomba.verPos(posicion);
-            campo.salida.value = saludo;
+            campo.salida.value = revisar;
             document.getElementById("demo").innerHTML = "Funciona";
           } catch (error) {
             console.log(error);
