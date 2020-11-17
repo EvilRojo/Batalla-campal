@@ -1,9 +1,6 @@
 export class nuevosol {
     /** @param {string} modo */
-    /** @param {Array} soldados */
     selecmo(modo){
-        const soldadosy=this.soldados();
-        this.paso(soldadosy);
         location.href ="juego.html";
     }
     soldados() {
