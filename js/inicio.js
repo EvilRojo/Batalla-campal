@@ -1,7 +1,7 @@
 export class nuevosol {
     /** @param {string} modo */
 
-    selectmo(modo) {
+    selecmo(modo){
         console.log("Funciona");
     }
   }
