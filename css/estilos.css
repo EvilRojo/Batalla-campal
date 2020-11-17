@@ -78,7 +78,7 @@ html,body {
     padding-right:1.5rem;
   }
 
-  button{
+  .button{
     text-decoration: none;
     padding: 10px;
     font-weight: 600;
