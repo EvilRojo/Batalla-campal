@@ -4,7 +4,7 @@ export class nuevosol {
     
 
     selecmo(modo){
-        for(i = 0; i < 25; i++){
+        for(var i = 0; i < 25; i++){
             var x=Math.random() * (11 - 1) + 1;
             var y=Math.random() * (11 - 1) + 1;
             var f=x+","+y;
