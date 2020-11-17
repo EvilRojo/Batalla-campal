@@ -730,7 +730,7 @@
         const bomba = new Batalla();
         function battle(dat){
           try {
-            const posicion= dat.getElementById("botondeenvio").value;
+            const posicion= dat.get("botondeenvio");
             const revisar = bomba.verPos(posicion);
           } catch (error) {
             console.log(error);
