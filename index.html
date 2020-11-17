@@ -174,10 +174,10 @@
       <script type="module">
         import { Batalla } from "./js/Batalla.js";
         const bomba = new Batalla();
-        document.forms.addEventListener("submit", evt => {
+        campo1.addEventListener("submit", evt => {
           try {
             evt.preventDefault();
-            const datos = new FormData(document.forms);
+            const datos = new FormData(campo1);
             const posicion= datos.get("botondeenvio");
             const revisar = bomba.verPos(posicion);
           } catch (error) {
@@ -188,6 +188,86 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo2);
+            const posicion= datos.get("botondeenvio");
+            const revisar = bomba.verPos(posicion);
+          } catch (error) {
+            console.log(error);
+          }
+        });
+        campo3.addEventListener("submit", evt => {
+          try {
+            evt.preventDefault();
+            const datos = new FormData(campo3);
+            const posicion= datos.get("botondeenvio");
+            const revisar = bomba.verPos(posicion);
+          } catch (error) {
+            console.log(error);
+          }
+        });
+        campo4.addEventListener("submit", evt => {
+          try {
+            evt.preventDefault();
+            const datos = new FormData(campo4);
+            const posicion= datos.get("botondeenvio");
+            const revisar = bomba.verPos(posicion);
+          } catch (error) {
+            console.log(error);
+          }
+        });
+        campo5.addEventListener("submit", evt => {
+          try {
+            evt.preventDefault();
+            const datos = new FormData(campo5);
+            const posicion= datos.get("botondeenvio");
+            const revisar = bomba.verPos(posicion);
+          } catch (error) {
+            console.log(error);
+          }
+        });
+        campo6.addEventListener("submit", evt => {
+          try {
+            evt.preventDefault();
+            const datos = new FormData(campo6);
+            const posicion= datos.get("botondeenvio");
+            const revisar = bomba.verPos(posicion);
+          } catch (error) {
+            console.log(error);
+          }
+        });
+        campo7.addEventListener("submit", evt => {
+          try {
+            evt.preventDefault();
+            const datos = new FormData(campo7);
+            const posicion= datos.get("botondeenvio");
+            const revisar = bomba.verPos(posicion);
+          } catch (error) {
+            console.log(error);
+          }
+        });
+        campo8.addEventListener("submit", evt => {
+          try {
+            evt.preventDefault();
+            const datos = new FormData(campo8);
+            const posicion= datos.get("botondeenvio");
+            const revisar = bomba.verPos(posicion);
+          } catch (error) {
+            console.log(error);
+          }
+        });
+        campo9.addEventListener("submit", evt => {
+          try {
+            evt.preventDefault();
+            const datos = new FormData(campo9);
+            const posicion= datos.get("botondeenvio");
+            const revisar = bomba.verPos(posicion);
+          } catch (error) {
+            console.log(error);
+          }
+        });
+        campo10.addEventListener("submit", evt => {
+          try {
+            evt.preventDefault();
+            const datos = new FormData(campo10);
             const posicion= datos.get("botondeenvio");
             const revisar = bomba.verPos(posicion);
           } catch (error) {
