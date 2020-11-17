@@ -174,15 +174,14 @@
       <script type="module">
         import { Batalla } from "./js/Batalla.js";
         const bomba = new Batalla();
-        campo1.addEventListener("submit", evt => {
+        document.forms.addEventListener("submit", evt => {
           try {
             evt.preventDefault();
-            const datos = new FormData(campo1);
+            const datos = new FormData(document.forms);
             const posicion= datos.get("botondeenvio");
             const revisar = bomba.verPos(posicion);
           } catch (error) {
             console.log(error);
-            campo1.salida.value = "no sale we";
           }
         });
         campo2.addEventListener("submit", evt => {
@@ -193,7 +192,6 @@
             const revisar = bomba.verPos(posicion);
           } catch (error) {
             console.log(error);
-            campo2.salida.value = "no sale we";
           }
         });
       </script>
