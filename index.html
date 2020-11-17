@@ -26,7 +26,7 @@
                     <tr>
                       <td>
                         <!--se intento realizar un solo form para cada tabla, pero los botones no pueden enviar datos-->
-                        <form id=campo1 onsubmit="battle(this)">
+                        <form id=campo1 method="get" onsubmit="return battle(this)">
                           <input type="hidden"value="1,1" name="botondeenvio">
                           <input class="suelo" type="image" id="salida1,1" src="img/tierra.jpg">
                         </form>
@@ -730,8 +730,7 @@
         const bomba = new Batalla();
         function battle(dat){
           try {
-            const datos = dat.elements["botondeenvio"];
-            const posicion= datos.get("botondeenvio");
+            const posicion= dat.elements["botondeenvio"].value;
             const revisar = bomba.verPos(posicion);
           } catch (error) {
             console.log(error);
