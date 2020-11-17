@@ -1,10 +1,10 @@
 export class Batalla {
     /** @param {string} posicion */
     verPos(posicion) {
-        const soldados = ["1,1", "2,3", "1,5"];
+        const soldados = ["1,1"];
         soldados.forEach(explosion);
         
-        function explosion(item, index) {
+        function explosion(item) {
             if(posicion===item){
                 document.getElementById(`salida${posicion}`).src="img/tumba.jpg"
             }else{
