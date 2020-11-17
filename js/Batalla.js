@@ -1,4 +1,4 @@
-import { soldad} from "soldad.js";
+import { soldad} from "/soldad.js";
 export class Batalla {
     /** @param {string} posicion */
     verPos(posicion) {
