@@ -3,7 +3,7 @@ export class Batalla {
     
         verPos(posicion) {
             document.getElementById(`salida${posicion}`).src="img/pasto.jpg"
-            soldados=["1,1", "3,7", "1,6"];
+            const soldados=["1,1", "3,7", "1,6"];
             soldados.forEach(explosion);
             function explosion(item) {
                 if(posicion===item){
@@ -13,7 +13,7 @@ export class Batalla {
         }
         verPos2(posicion) {
             document.getElementById(`alida${posicion}`).src="img/pasto.jpg"
-            soldados=["1,1", "3,7", "1,6"];
+            const soldados=["1,1", "3,7", "1,6"];
             soldados.forEach(explosion);
             function explosion(item) {
                 if(posicion===item){
