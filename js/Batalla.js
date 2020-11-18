@@ -5,7 +5,7 @@ export class Batalla {
             document.getElementById(`salida${posicion}`).src="img/pasto.jpg"
             var x=Number;
             const soldados=[];
-            soldados=this.arr();
+            soldados=arr(soldados);
             soldados.forEach(explosion);
             function explosion(item) {
                 if(posicion===item){
