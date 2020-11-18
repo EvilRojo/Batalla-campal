@@ -3,9 +3,10 @@ export class Batalla {
     
         verPos(posicion) {
             document.getElementById(`salida${posicion}`).src="img/pasto.jpg"
-            var x;
+            var x=2;
+            const soldados=[]
             if(x != 1){
-                const soldados=this.soldados();
+                soldados=this.soldados();
                 x=1
             }
             soldados.forEach(explosion);
