@@ -16,7 +16,7 @@ export class Batalla {
             }
             return numero;
         }
-        verPos2(posicion) {
+        verPos2(posicion, numero) {
             var x="B";
             document.getElementById(`alida${posicion}`).src="img/pasto.jpg"
             const soldados=this.arr();
