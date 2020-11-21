@@ -28,18 +28,19 @@ export class Batalla {
             document.getElementById(`alida${posicion}`).disabled=true;
             const soldados=this.arr();
             soldados.forEach(explosion);
-            this.bloqueo(x);
+            var comp=this.bloqueo(x);
             function explosion(item) {
                 if(posicion===item){
                     document.getElementById(`alida${posicion}`).src="img/tumba.jpg"
                     numero=parseInt(numero)+1;
                 }
             }
-            if(numero>=20){
+            if(numero>=10){
                 numero="Ganaste, Felicidades"
                 x="C";
                 this.bloqueo(x);
             }
+            numero=comp+numero;
             return numero;
         }
 
@@ -93,12 +94,13 @@ export class Batalla {
                     if(Rojo=="A"){
                     document.getElementById(`salida${x},${y}`).disabled=true;
                     document.getElementById(`alida${x},${y}`).disabled=false;
-                    console.log(x+","+y);
+                    return "sigue player 2";
                     }
                     if(Rojo=="B"){
                         document.getElementById(`alida${x},${y}`).disabled=true; 
                         document.getElementById(`salida${x},${y}`).disabled=false;
                         console.log(x+","+y);
+                        return "sigue player 1";
                     }
                     if(Rojo=="C"){
                         document.getElementById(`alida${x},${y}`).disabled=true; 
