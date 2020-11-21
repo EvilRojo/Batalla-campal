@@ -43,7 +43,7 @@ export class Batalla {
             return numero;
         }
 
-        bloqueo(x){
+        bloqueo(Rojo){
             
                 for(var i = 0; i < 100; i++){
                     var x=1;
@@ -90,17 +90,17 @@ export class Batalla {
                             y=y+(i-90);
                         break;
                     }
-                    if(x=="A"){
+                    if(Rojo=="A"){
                     document.getElementById(`salida${x},${y}`).disabled=true;
                     document.getElementById(`alida${x},${y}`).disabled=false;
                     console.log(x+","+y);
                     }
-                    if(x=="B"){
+                    if(Rojo=="B"){
                         document.getElementById(`alida${x},${y}`).disabled=true; 
                         document.getElementById(`salida${x},${y}`).disabled=false;
                         console.log(x+","+y);
                     }
-                    if(x=="C"){
+                    if(Rojo=="C"){
                         document.getElementById(`alida${x},${y}`).disabled=true; 
                         document.getElementById(`salida${x},${y}`).disabled=true;
                     }
