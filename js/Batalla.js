@@ -20,7 +20,6 @@ export class Batalla {
                 x="C";
                 this.bloqueo(x);
             }
-            numero=numero+" Sigue player 2";
             return numero;
         }
         verPos2(posicion, numero) {
@@ -40,7 +39,7 @@ export class Batalla {
                 x="C";
                 this.bloqueo(x);
             }
-            numero=numero+" Sigue player 1";
+        
             return numero;
         }
 
@@ -112,7 +111,7 @@ export class Batalla {
 
         arr(arreglo) {
             arreglo=[];
-            for (var i = 0; i < 25; i++) {
+            for (var i = 0; i < 30; i++) {
               var x = Math.floor(Math.random() * (11 - 1) + 1);
               var y = Math.floor(Math.random() * (11 - 1) + 1);
               var f = x + "," + y;

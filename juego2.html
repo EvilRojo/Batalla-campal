@@ -15,7 +15,10 @@
         <div class="div100">
               <div id="A" class="div50">
                 <center>
-                  <table>
+                  <form id=muertos>
+                    <input class="puntos" type="text" readonly value=0 name="puntos1">
+                  </form>
+                  <table id=w1>
                     <tr>
                       <td>
                         <!--se intento realizar un solo form para cada tabla, pero los botones no pueden enviar datos-->
@@ -677,6 +680,9 @@
             <td>
               <div class="div50">
                 <center>
+                  <form id=muertos2>
+                    <input class="puntos" type="text" readonly value=0 name="puntos2">
+                  </form>
                   <table>
                     <tr>
                       <td>
@@ -1342,8 +1348,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo1);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar.n;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1352,8 +1362,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo2);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -1362,8 +1375,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo3);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1372,8 +1389,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo4);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1382,8 +1403,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo5);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1392,8 +1417,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo6);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1402,8 +1431,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo7);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1412,8 +1445,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo8);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1422,8 +1459,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo9);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1432,8 +1473,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo10);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1442,8 +1487,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo11);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1452,8 +1501,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo12);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1462,8 +1515,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo13);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1472,8 +1529,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo14);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1482,8 +1543,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo15);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1492,8 +1557,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo16);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1502,8 +1571,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo17);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1512,8 +1585,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo18);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1522,8 +1599,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo19);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1532,8 +1613,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo20);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1542,8 +1627,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo21);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1552,8 +1641,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo22);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1562,8 +1655,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo23);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1572,8 +1669,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo24);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1582,8 +1683,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo25);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1592,8 +1697,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo26);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1602,8 +1711,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo27);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1612,8 +1725,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo28);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1622,8 +1739,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo29);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1632,8 +1753,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo30);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1642,8 +1767,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo31);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1652,8 +1781,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo32);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1662,8 +1795,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo33);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1672,8 +1809,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo34);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1682,8 +1823,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo35);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1692,8 +1837,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo36);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1702,8 +1851,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo37);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1712,8 +1865,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo38);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1722,8 +1879,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo39);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1732,8 +1893,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo40);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1742,8 +1907,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo41);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1752,8 +1921,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo42);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1762,8 +1935,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo43);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1772,8 +1949,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo44);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1782,8 +1963,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo45);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1792,8 +1977,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo46);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1802,8 +1991,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo47);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1812,8 +2005,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo48);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1822,8 +2019,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo49);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1832,8 +2033,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo50);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1842,8 +2047,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo51);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1852,8 +2061,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo52);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1862,8 +2075,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo53);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1872,8 +2089,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo54);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1882,8 +2103,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo55);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1892,8 +2117,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo56);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1902,8 +2131,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo57);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1912,8 +2145,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo58);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1922,8 +2159,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo59);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1932,8 +2173,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo60);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1942,8 +2187,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo61);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1952,8 +2201,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo62);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1962,8 +2215,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo63);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1972,8 +2229,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo64);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1982,8 +2243,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo65);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -1992,8 +2257,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo66);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2002,8 +2271,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo67);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2012,8 +2285,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo68);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2022,8 +2299,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo69);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2032,8 +2313,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo70);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2042,8 +2327,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo71);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2052,8 +2341,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo72);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2062,8 +2355,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo73);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2072,8 +2369,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo74);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2082,8 +2383,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo75);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2092,8 +2397,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo76);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2102,8 +2411,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo77);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2112,8 +2425,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo78);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2122,8 +2439,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo79);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2132,8 +2453,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo80);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2142,8 +2467,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo81);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2152,8 +2481,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo82);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2162,8 +2495,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo83);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2172,8 +2509,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo84);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2182,8 +2523,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo85);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2192,8 +2537,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo86);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2202,8 +2551,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo87);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2212,8 +2565,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo88);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2222,8 +2579,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo89);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2232,8 +2593,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo90);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2242,8 +2607,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo91);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2252,8 +2621,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo92);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2262,8 +2635,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo93);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2272,8 +2649,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo94);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2282,8 +2663,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo95);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2292,8 +2677,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo96);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2302,8 +2691,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo97);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2312,8 +2705,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo98);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2322,8 +2719,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo99);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2332,8 +2733,12 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo100);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
+           
           } catch (error) {
             console.log(error);
           }
@@ -2342,8 +2747,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo101);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+            muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2352,8 +2760,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo102);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2362,8 +2773,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo103);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2372,8 +2786,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo104);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2382,8 +2799,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo105);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2392,8 +2812,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo106);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2402,8 +2825,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo107);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2412,8 +2838,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo108);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2422,8 +2851,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo109);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2432,8 +2864,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo110);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2442,8 +2877,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo111);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2452,8 +2890,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo112);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2462,8 +2903,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo113);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2472,8 +2916,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo114);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2482,8 +2929,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo115);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2492,8 +2942,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo116);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2502,8 +2955,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo117);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2512,8 +2968,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo118);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2522,8 +2981,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo119);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2532,8 +2994,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo120);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2542,8 +3007,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo121);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2552,8 +3020,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo122);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2562,8 +3033,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo123);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2572,8 +3046,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo124);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2582,8 +3059,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo125);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2592,8 +3072,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo126);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2602,8 +3085,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo127);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2612,8 +3098,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo128);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2622,8 +3111,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo129);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2632,8 +3124,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo130);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2642,8 +3137,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo131);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2652,8 +3150,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo132);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2662,8 +3163,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo133);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2672,8 +3176,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo134);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2682,8 +3189,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo135);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2692,8 +3202,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo136);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2702,8 +3215,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo137);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2712,8 +3228,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo138);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2722,8 +3241,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo139);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2732,8 +3254,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo140);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2742,8 +3267,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo141);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2752,8 +3280,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo142);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2762,8 +3293,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo143);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2772,8 +3306,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo144);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2782,8 +3319,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo145);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2792,8 +3332,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo146);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2802,8 +3345,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo147);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2812,8 +3358,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo148);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2822,8 +3371,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo149);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2832,8 +3384,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo150);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2842,8 +3397,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo151);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2852,8 +3410,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo152);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2862,8 +3423,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo153);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2872,8 +3436,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo154);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2882,8 +3449,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo155);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2892,8 +3462,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo156);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2902,8 +3475,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo157);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2912,8 +3488,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo158);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2922,8 +3501,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo159);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2932,8 +3514,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo160);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2942,8 +3527,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo161);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2952,8 +3540,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo162);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2962,8 +3553,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo163);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2972,8 +3566,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo164);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2982,8 +3579,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo165);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -2992,8 +3592,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo166);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3002,8 +3605,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo167);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3012,8 +3618,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo168);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3022,8 +3631,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo169);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3032,8 +3644,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo170);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3042,8 +3657,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo171);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3052,8 +3670,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo172);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3062,8 +3683,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo173);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3072,8 +3696,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo174);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3082,8 +3709,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo175);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3092,8 +3722,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo176);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3102,8 +3735,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo177);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3112,8 +3748,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo178);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3122,8 +3761,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo179);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3132,8 +3774,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo180);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3142,8 +3787,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo181);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3152,8 +3800,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo182);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3162,8 +3813,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo183);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3172,8 +3826,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo184);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3182,8 +3839,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo185);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3192,8 +3852,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo186);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3202,8 +3865,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo187);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3212,8 +3878,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo188);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3222,8 +3891,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo189);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3232,8 +3904,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo190);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3242,8 +3917,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo191);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3252,8 +3930,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo192);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3262,8 +3943,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo193);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3272,8 +3956,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo194);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3282,8 +3969,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo195);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3292,8 +3982,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo196);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3302,8 +3995,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo197);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3312,8 +4008,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo198);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3322,8 +4021,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo199);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
@@ -3332,8 +4034,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo200);
+            const puntos = new FormData(muertos2);
             const posicion= datos.get("botonenvio");
-            const revisar = bomba.verPos2(posicion);
+            const numero= puntos.get("puntos2");
+            const revisar = bomba.verPos2(posicion, numero);
+ muertos2.puntos2.value = revisar;
           } catch (error) {
             console.log(error);
           }
