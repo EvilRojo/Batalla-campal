@@ -17,6 +17,8 @@ export class Batalla {
             }
             if(numero>=20){
                 numero="Ganaste, Felicidades"
+                x="C";
+                this.bloqueo(x);
             }
             return numero;
         }
@@ -35,6 +37,8 @@ export class Batalla {
             }
             if(numero>=20){
                 numero="Ganaste, Felicidades"
+                x="C";
+                this.bloqueo(x);
             }
             return numero;
         }
@@ -88,9 +92,15 @@ export class Batalla {
                     }
                     if(x=="A"){
                     document.getElementById(`salida${x},${y}`).disabled=true;
+                    document.getElementById(`alida${x},${y}`).disabled=false;
                     }
                     if(x=="B"){
                         document.getElementById(`alida${x},${y}`).disabled=true; 
+                        document.getElementById(`salida${x},${y}`).disabled=false;
+                    }
+                    if(x=="C"){
+                        document.getElementById(`alida${x},${y}`).disabled=true; 
+                        document.getElementById(`salida${x},${y}`).disabled=true;
                     }
                 }
             if(x=="A"){ 
