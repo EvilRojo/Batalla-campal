@@ -32,7 +32,8 @@ export class Batalla {
                 x="C";
                 this.bloqueo(x);
             }
-            return numero, numero2;
+            contenedor=[numero, numero2];
+            return contenedor;
         }
 
         IA(cordenada){
