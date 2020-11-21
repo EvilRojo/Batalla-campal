@@ -5,6 +5,7 @@ export class Batalla {
         verPos(posicion, numero) {
             var x="A";
             document.getElementById(`salida${posicion}`).src="img/pasto.jpg"
+            document.getElementById(`salida${posicion}`).disabled=true;
             const soldados=this.arr();
             soldados.forEach(explosion);
             this.bloqueo(x);
@@ -15,7 +16,7 @@ export class Batalla {
                 }
             }
             if(numero>=20){
-                numero="Ganaste, acabaste con los soldados enemigos"
+                numero="Ganaste, Felicidades"
             }
             return numero;
         }
@@ -32,7 +33,7 @@ export class Batalla {
                 }
             }
             if(numero>=20){
-                numero="Ganaste, acabaste con los soldados enemigos"
+                numero="Ganaste, Felicidades"
             }
             return numero;
         }
