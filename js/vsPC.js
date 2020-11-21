@@ -32,7 +32,6 @@ export class Batalla {
                 x="C";
                 this.bloqueo(x);
             }
-            console.log(numero+numero2);
             return numero, numero2;
         }
 
