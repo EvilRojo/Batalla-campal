@@ -40,11 +40,11 @@ export class Batalla {
         }
 
         bloqueo(x){
-            if(x=="A"){
+            
                 for(var i = 0; i < 100; i++){
                     var x=1;
                     var y=1;
-                    switch (i){
+                    switch (true){
                         case i<=9:
                             x=x;
                             y=y+i;
@@ -86,10 +86,14 @@ export class Batalla {
                             y=y+(i-90);
                         break;
                     }
+                    if(x=="A"){
                     document.getElementById(`salida${x},${y}`).disabled=true;
-                    console.log(x+","+y);
+                    }
+                    if(x=="B"){
+                        document.getElementById(`alida${x},${y}`).disabled=true; 
+                    }
                 }
-                
+            if(x=="A"){ 
                 
             }else{
                 x="A";
