@@ -1,18 +1,20 @@
 export class Batalla {
     /** @param {string} posicion */
+    /** @param {number} numero */
         
-        verPos(posicion) {
+        verPos(posicion, numero) {
             var x="A";
             document.getElementById(`salida${posicion}`).src="img/pasto.jpg"
-            //const soldados=["1,1", "3,7", "1,6","9,9","9,2","3,6","5,9","8,6","4,8","2,3","1,8","6,9","3,1","4,4","8,2","7,4","6,4","4,6","5,7","2,4"];
             const soldados=this.arr();
             soldados.forEach(explosion);
             this.bloqueo(x);
             function explosion(item) {
                 if(posicion===item){
                     document.getElementById(`salida${posicion}`).src="img/tumba.jpg"
+                    numero=numero+1;
                 }
             }
+            return numero
         }
         verPos2(posicion) {
             var x="B";
