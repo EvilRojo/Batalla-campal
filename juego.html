@@ -16,7 +16,7 @@
               <div id="A" class="div50">
                 <center>
                   <form id=muertos>
-                    <input type="text"value=0 name="puntos1">
+                    <input type="text"  name="puntos1">
                   </form>
                   <table>
                     <tr>
@@ -1358,8 +1358,11 @@
           try {
             evt.preventDefault();
             const datos = new FormData(campo2);
+            const puntos = new FormData(muertos);
             const posicion= datos.get("botondeenvio");
-            const revisar = bomba.verPos(posicion);
+            const numero= puntos.get("puntos1");
+            const revisar = bomba.verPos(posicion, numero);
+            muertos.puntos1.value = revisar;
           } catch (error) {
             console.log(error);
           }
