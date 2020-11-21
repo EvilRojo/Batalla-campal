@@ -108,7 +108,7 @@ export class Batalla {
     }
         arr(arreglo) {
             arreglo=[];
-            for (var i = 0; i < 45; i++) {
+            for (var i = 0; i < 30; i++) {
               var x = Math.floor(Math.random() * (11 - 1) + 1);
               var y = Math.floor(Math.random() * (11 - 1) + 1);
               var f = x + "," + y;
