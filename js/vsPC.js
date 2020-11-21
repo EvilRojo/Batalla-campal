@@ -32,7 +32,7 @@ export class Batalla {
                 x="C";
                 this.bloqueo(x);
             }
-            contenedor=[numero, numero2];
+             var contenedor=[numero, numero2];
             return contenedor;
         }
 
