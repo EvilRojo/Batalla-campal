@@ -22,12 +22,12 @@ export class Batalla {
                     numero2=parseInt(numero2)+1;
                 }
             }
-            if(numero>=10){
+            if(numero>=15){
                 numero="Ganaste, Felicidades"
                 x="C";
                 this.bloqueo(x);
             }
-            if(numero2>=10){
+            if(numero2>=15){
                 numero2="Gana la PC"
                 x="C";
                 this.bloqueo(x);
