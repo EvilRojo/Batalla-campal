@@ -15,7 +15,7 @@ export class Batalla {
                     numero=parseInt(numero)+1;
                 }
             }
-            if(numero>=20){
+            if(numero>=10){
                 numero="Ganaste, Felicidades"
                 x="C";
                 this.bloqueo(x);
@@ -26,9 +26,9 @@ export class Batalla {
         verPos2(posicion, numero) {
             var x="B";
             document.getElementById(`alida${posicion}`).src="img/pasto.jpg"
-            document.getElementById(`alida${posicion}`).disabled=true;
             const soldados=this.arr();
             soldados.forEach(explosion);
+            this.bloqueo(x);
             function explosion(item) {
                 if(posicion===item){
                     document.getElementById(`alida${posicion}`).src="img/tumba.jpg"
