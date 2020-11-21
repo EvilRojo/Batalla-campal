@@ -1352,7 +1352,7 @@
             const posicion= datos.get("botondeenvio");
             const numero= puntos.get("puntos1");
             const revisar = bomba.verPos(posicion, numero);
-            muertos.puntos1.value = revisar.n;
+            muertos.puntos1.value = revisar;
            
           } catch (error) {
             console.log(error);
