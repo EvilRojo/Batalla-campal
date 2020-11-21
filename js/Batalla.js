@@ -11,7 +11,7 @@ export class Batalla {
             function explosion(item) {
                 if(posicion===item){
                     document.getElementById(`salida${posicion}`).src="img/tumba.jpg"
-                    numero=numero+1;
+                    numero=parseInt(numero)+1;
                 }
             }
             return numero
