@@ -94,13 +94,13 @@ export class Batalla {
                     if(Rojo=="A"){
                     document.getElementById(`salida${x},${y}`).disabled=true;
                     document.getElementById(`alida${x},${y}`).disabled=false;
-                    return "sigue player 2";
+                    return " sigue player 2";
                     }
                     if(Rojo=="B"){
                         document.getElementById(`alida${x},${y}`).disabled=true; 
                         document.getElementById(`salida${x},${y}`).disabled=false;
                         console.log(x+","+y);
-                        return "sigue player 1";
+                        return " sigue player 1";
                     }
                     if(Rojo=="C"){
                         document.getElementById(`alida${x},${y}`).disabled=true; 
