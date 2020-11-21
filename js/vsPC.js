@@ -6,7 +6,6 @@ export class Batalla {
         verPos(posicion, numero) {
             var x="A";
             document.getElementById(`salida${posicion}`).src="img/pasto.jpg"
-
             const soldados=this.arr();
             soldados.forEach(explosion);
             this.bloqueo(x);
@@ -17,13 +16,11 @@ export class Batalla {
                 }
             }
             const cord=this.IA();
-            var x="B";
             const numero2=0;
             posicion=cord;
             document.getElementById(`alida${posicion}`).src="img/pasto.jpg"
             const soldados2=this.arr();
             soldados2.forEach(explosion2);
-            this.bloqueo(x);
             function explosion2(item) {
                 if(posicion===item){
                     document.getElementById(`alida${posicion}`).src="img/tumba.jpg"
@@ -100,12 +97,6 @@ export class Batalla {
                 if(Rojo=="A"){
                 document.getElementById(`salida${x},${y}`).disabled=true;
                 document.getElementById(`alida${x},${y}`).disabled=false;
-                
-                }
-                if(Rojo=="B"){
-                    document.getElementById(`alida${x},${y}`).disabled=true; 
-                    document.getElementById(`salida${x},${y}`).disabled=false;
-                    console.log(x+","+y);
                 
                 }
                 if(Rojo=="C"){
