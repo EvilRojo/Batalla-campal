@@ -5,7 +5,9 @@ export class Batalla {
         
         verPos(posicion, numero) {
             var x="A";
+            const cord=this.IA();
             document.getElementById(`salida${posicion}`).src="img/pasto.jpg"
+            document.getElementById(`alida${cord}`).src="img/pasto.jpg"
             const soldados=this.arr();
             soldados.forEach(explosion);
             this.bloqueo(x);
@@ -14,25 +16,22 @@ export class Batalla {
                     document.getElementById(`salida${posicion}`).src="img/tumba.jpg"
                     numero=parseInt(numero)+1;
                 }
-            }
-            const cord=this.IA();
-            const numero2=0;
-            posicion=cord;
-            document.getElementById(`alida${posicion}`).src="img/pasto.jpg"
-            const soldados2=this.arr();
-            soldados2.forEach(explosion2);
-            function explosion2(item) {
-                if(posicion===item){
-                    document.getElementById(`alida${posicion}`).src="img/tumba.jpg"
-                    numero2=parseInt(numero2)+1;
+                if(cord===item){
+                    document.getElementById(`salida${cord}`).src="img/tumba.jpg"
+                    numero=parseInt(numero)+1;
                 }
             }
-            if(numero2>=10){
-                numero="Gana la PC"
+            if(numero>=10){
+                numero="Ganaste, Felicidades"
                 x="C";
                 this.bloqueo(x);
             }
-             var contenedor=[numero, numero2];
+            if(numero2>=10){
+                numero2="Gana la PC"
+                x="C";
+                this.bloqueo(x);
+            }
+            const contenedor=[numero, numero2];
             return contenedor;
         }
 
