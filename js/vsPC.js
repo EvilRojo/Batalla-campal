@@ -3,7 +3,7 @@ export class Batalla {
     /** @param {number} numero */
 
         
-        verPos(posicion, numero) {
+        verPos(posicion, numero, numero2) {
             var x="A";
             const cord=this.IA();
             document.getElementById(`salida${posicion}`).src="img/pasto.jpg"
@@ -18,7 +18,7 @@ export class Batalla {
                 }
                 if(cord===item){
                     document.getElementById(`salida${cord}`).src="img/tumba.jpg"
-                    numero=parseInt(numero)+1;
+                    numero2=parseInt(numero2)+1;
                 }
             }
             if(numero>=10){
