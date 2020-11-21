@@ -3,6 +3,9 @@ export class Batalla {
     /** @param {number} numero */
         
         verPos(posicion, numero) {
+            if(numero==null){
+                numero=0;
+            }
             var x="A";
             document.getElementById(`salida${posicion}`).src="img/pasto.jpg"
             const soldados=this.arr();
