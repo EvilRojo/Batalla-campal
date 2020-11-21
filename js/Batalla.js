@@ -14,6 +14,9 @@ export class Batalla {
                     numero=parseInt(numero)+1;
                 }
             }
+            if(numero>=20){
+                numero="Ganaste, acabaste con los soldados enemigos"
+            }
             return numero;
         }
         verPos2(posicion, numero) {
@@ -27,6 +30,9 @@ export class Batalla {
                     document.getElementById(`alida${posicion}`).src="img/tumba.jpg"
                     numero=parseInt(numero)+1;
                 }
+            }
+            if(numero>=20){
+                numero="Ganaste, acabaste con los soldados enemigos"
             }
             return numero;
         }
