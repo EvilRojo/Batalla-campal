@@ -87,6 +87,7 @@ export class Batalla {
                         break;
                     }
                     document.getElementById(`salida${x},${y}`).disabled=true;
+                    console.log(x+","+y);
                 }
                 
                 
