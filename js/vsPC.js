@@ -95,7 +95,7 @@ export class Batalla {
                     break;
                 }
                 if(Rojo=="A"){
-                document.getElementById(`salida${x},${y}`).disabled=false;
+                
                 document.getElementById(`alida${x},${y}`).disabled=true;
                 
                 }
