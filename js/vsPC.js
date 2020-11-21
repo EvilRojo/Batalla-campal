@@ -8,6 +8,7 @@ export class Batalla {
             const cord=this.IA();
             document.getElementById(`salida${posicion}`).src="img/pasto.jpg"
             document.getElementById(`alida${cord}`).src="img/pasto.jpg"
+            document.getElementById(`salida${posicion}`).disabled=true;
             const soldados=this.arr();
             soldados.forEach(explosion);
             this.bloqueo(x);
@@ -31,7 +32,7 @@ export class Batalla {
                 x="C";
                 this.bloqueo(x);
             }
-            const contenedor=[numero, numero2];
+            const contenedor=[numero,numero2];
             return contenedor;
         }
 
