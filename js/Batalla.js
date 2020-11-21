@@ -23,6 +23,7 @@ export class Batalla {
         verPos2(posicion, numero) {
             var x="B";
             document.getElementById(`alida${posicion}`).src="img/pasto.jpg"
+            document.getElementById(`salida${posicion}`).disabled=true;
             const soldados=this.arr();
             soldados.forEach(explosion);
             this.bloqueo(x);
@@ -40,10 +41,12 @@ export class Batalla {
 
         bloqueo(x){
             if(x=="A"){
+                document.getElementById(`w1`).disabled=true;
                 x="B";
             }else{
                 x="A";
             }
+
         }
 
         arr(arreglo) {
