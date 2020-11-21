@@ -93,10 +93,12 @@ export class Batalla {
                     if(x=="A"){
                     document.getElementById(`salida${x},${y}`).disabled=true;
                     document.getElementById(`alida${x},${y}`).disabled=false;
+                    console.log(x+","+y);
                     }
                     if(x=="B"){
                         document.getElementById(`alida${x},${y}`).disabled=true; 
                         document.getElementById(`salida${x},${y}`).disabled=false;
+                        console.log(x+","+y);
                     }
                     if(x=="C"){
                         document.getElementById(`alida${x},${y}`).disabled=true; 
