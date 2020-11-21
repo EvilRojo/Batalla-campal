@@ -17,7 +17,7 @@ export class Batalla {
                     numero=parseInt(numero)+1;
                 }
                 if(cord===item){
-                    document.getElementById(`salida${cord}`).src="img/tumba.jpg"
+                    document.getElementById(`alida${cord}`).src="img/tumba.jpg"
                     numero2=parseInt(numero2)+1;
                 }
             }
