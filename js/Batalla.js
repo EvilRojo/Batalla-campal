@@ -105,11 +105,6 @@ export class Batalla {
                         document.getElementById(`salida${x},${y}`).disabled=true;
                     }
                 }
-            if(x=="A"){ 
-                
-            }else{
-                x="A";
-            }
 
         }
 
